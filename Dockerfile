@@ -14,6 +14,7 @@ COPY ./requirements.txt /requirements.txt
 
 #let pip install required packages
 RUN pip install --upgrade pip
+RUN pip install psycopg2-binary
 RUN pip install -r requirements.txt
 
 #directory to store app source code
